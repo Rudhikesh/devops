@@ -1,0 +1,38 @@
+configure clouds with role
+
+1 lunch instan
+ - select ubantu
+ - Add role ecs full acesses
+ - add port no 500 
+2 creat ecs custer
+3 attach with jenkins sever
+4 install ecs plugins
+  -manage jenkins
+  -manage plugin
+  -availebale plugins
+  -pluing name:ecs forgate plugin
+5 manage jenkins 
+- configure clouds
+ -add name
+ -Amazon ECS region name:ap-northeast-1
+ -sect ECS custer
+ -ADVANCE
+ -tunnel connection through: 18.183.45.7:5000
+ -Alternative Jenkins URL: http://18.183.45.7:8080
+ -Number of executors per agent : 5
+ -ECS task creation timeout :900
+ -Container Cleanup Timeout :5
+ -ECS task polling interval :1
+ -ECS agent templates
+   -lable: ecs agent
+   -Tempale NAme :ecs-agent-tremplate
+   -Launch type :FARGATE
+   -Operating System Family :linux
+   -CPU Architecture :x86_64
+   -Filesystem root :/home/ubuntu
+   -Platform Version :LATEST
+   -Soft Memory Reservation :2048
+   -cpu unit :1024
+   -subnet :subnet-0532e8ba27eb44c76
+   -Security Groups: sg-035fc52a660cc63ea
+   -select tic Assign public IP
