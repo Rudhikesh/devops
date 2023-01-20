@@ -6,6 +6,10 @@ configure clouds with role
  - add port no 500 
  - install tomcat, java, git
 2 creat ecs custer
+ -instance
+ -action
+  -security
+  -modify, IAM role [secate role}
 3 attach with jenkins sever
 4 install ecs plugins
   -manage jenkins
