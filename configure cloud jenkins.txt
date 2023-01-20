@@ -4,6 +4,7 @@ configure clouds with role
  - select ubantu
  - Add role ecs full acesses
  - add port no 500 
+ - add tomcat, java, git
 2 creat ecs custer
 3 attach with jenkins sever
 4 install ecs plugins
